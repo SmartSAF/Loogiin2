@@ -1,0 +1,133 @@
+/* Gaya umum body dengan background gradien */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #7ed56f, #ffffff, #fffa65, #ffffff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Kontainer dasar */
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* Kontainer Login (WL) – gradien baru: biru cerah, orange, hijau cerah */
+.login-container {
+  width: 85%;
+  background: linear-gradient(45deg, #00aaff, #FFA500, #00FF00);
+  background-size: 300% 300%;
+  animation: gradientLogin 10s ease infinite;
+  text-align: left;
+}
+
+/* Lebar form login 75% dari lebar kontainer */
+#loginForm {
+  width: 75%;
+  margin: 0 auto;
+}
+
+@keyframes gradientLogin {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Kontainer Data (WD) */
+.data-container {
+  width: 89%;
+  background: linear-gradient(45deg, #7ed56f, #ffffff, #fffa65, #ffffff);
+  background-size: 400% 400%;
+  animation: gradientData 10s ease infinite;
+}
+
+@keyframes gradientData {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Judul dan Subjudul */
+h2, h3 {
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Label field */
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+/* Input field */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Tombol dasar */
+.btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #2196F3;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+/* Tombol animasi – berkedip dengan pergantian warna (biru cerah, orange, hijau cerah) dan border hitam */
+.animated-btn {
+  border: 2px solid black;
+  animation: blinkColors 3s infinite;
+}
+
+@keyframes blinkColors {
+  0% { background-color: #00aaff; }
+  33% { background-color: #FFA500; }
+  66% { background-color: #00FF00; }
+  100% { background-color: #00aaff; }
+}
+
+/* Gaya tabel untuk data anggota */
+.table-data {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table-data th,
+.table-data td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-data th {
+  width: 30%;
+}
